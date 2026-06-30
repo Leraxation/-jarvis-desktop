@@ -644,7 +644,7 @@ export default function JarvisApp() {
 
     try {
       const history = [...messages, { role:"user", content:text }];
-      const res = await fetch("https://api.anthropic.com/v1/messages", {
+      const res = await fetch("https://khalfan-production.up.railway.app/chat", {
         method:"POST",
         headers:{
           "Content-Type": "application/json",
